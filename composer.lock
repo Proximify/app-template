@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d514b22006fbb474f348f5b8ad3bd9cc",
+    "content-hash": "b5221a8dc2dd1d946f2521eb36c3ba89",
     "packages": [
         {
             "name": "proximify/cli-actions",
@@ -296,12 +296,58 @@
             "time": "2020-10-14T17:08:19+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "t4web/composer-lock-parser",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/t4web/ComposerLockParser.git",
+                "reference": "65337d6d39accf22704cdce8beb20f27a601c838"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/t4web/ComposerLockParser/zipball/65337d6d39accf22704cdce8beb20f27a601c838",
+                "reference": "65337d6d39accf22704cdce8beb20f27a601c838",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "<2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ComposerLockParser\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Max Gulturyan",
+                    "email": "gulturyan@gmail.com",
+                    "homepage": "http://about.me/maxgu"
+                }
+            ],
+            "description": "OOP reader of composer.lock file.",
+            "homepage": "https://github.com/t4web/ComposerLockParser",
+            "keywords": [
+                "composer.lock reader"
+            ],
+            "time": "2018-10-30T10:59:33+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "proximify/cli-actions": 20,
-        "proximify/foreign-packages": 20
+        "proximify/foreign-packages": 20,
+        "t4web/composer-lock-parser": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
