@@ -1,0 +1,33 @@
+{
+    "name": "proximify/app-template",
+    "description": "Template to create a component-based single page application (SPA).",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Proximify Inc",
+            "email": "support@proximify.ca"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "proximify/cli-actions": "dev-master",
+        "proximify/foreign-packages": "dev-master"
+    },
+    "scripts": {
+        "post-root-package-install": "Proximify\\CLIActions::auto",
+        "post-create-project-cmd": "Proximify\\CLIActions::auto",
+        "pre-install-cmd": "Proximify\\CLIActions::auto",
+        "post-install-cmd": "Proximify\\CLIActions::auto",
+        "pre-status-cmd": "Proximify\\CLIActions::auto",
+        "post-status-cmd": "Proximify\\CLIActions::auto",
+        "pre-update-cmd": "Proximify\\CLIActions::auto",
+        "post-update-cmd": "Proximify\\CLIActions::auto",
+        "pre-package-install": "Proximify\\CLIActions::auto",
+        "post-package-install": "Proximify\\CLIActions::auto",
+        "pre-package-update": "Proximify\\CLIActions::auto",
+        "post-package-update": "Proximify\\CLIActions::auto",
+        "pre-package-uninstall": "Proximify\\CLIActions::auto",
+        "post-package-uninstall": "Proximify\\CLIActions::auto"
+    }
+}
