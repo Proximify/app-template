@@ -17,7 +17,8 @@
     "minimum-stability": "dev",
     "require": {
         "proximify/cli-actions": "dev-master",
-        "proximify/foreign-packages": "dev-master"
+        "proximify/foreign-packages": "dev-master",
+        "proximify/pm": "dev-master"
     },
     "scripts": {
         "post-root-package-install": "Proximify\\AppCLI::auto",
@@ -37,5 +38,14 @@
     },
     "require-dev": {
         "t4web/composer-lock-parser": "dev-master"
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/Users/dmac/Proximify/pm",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
 }
