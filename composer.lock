@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "89639998e343d44c6c57c580543cdc3b",
+    "content-hash": "48c2adc7e135229836a88094dc734f9e",
     "packages": [
         {
             "name": "proximify/cli-actions",
@@ -47,6 +47,41 @@
                 "source": "https://github.com/Proximify/cli-actions/tree/master"
             },
             "time": "2020-11-14T22:11:40+00:00"
+        },
+        {
+            "name": "proximify/glot-renderer",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:Proximify/glot-renderer.git",
+                "reference": "0b25bdcdeedfec7e3b1d41bca5ffb723be81d1fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Proximify/glot-renderer/zipball/0b25bdcdeedfec7e3b1d41bca5ffb723be81d1fd",
+                "reference": "0b25bdcdeedfec7e3b1d41bca5ffb723be81d1fd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Proximify\\Glot\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Proximify",
+                    "email": "support@proximify.ca"
+                }
+            ],
+            "description": "Renderer module for the GLOT framework.",
+            "time": "2020-11-13T21:50:16+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -834,7 +869,7 @@
             "dist": {
                 "type": "path",
                 "url": "/Users/dmac/Proximify/pm",
-                "reference": "bb0e2aba9b8dc510618b597566f6a537b21d8c34"
+                "reference": "7fd8828550635de34079f0a2279312d420b44f3e"
             },
             "require": {
                 "composer-plugin-api": "^2.0",
@@ -2077,6 +2112,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "proximify/cli-actions": 20,
+        "proximify/glot-renderer": 20,
         "t4web/composer-lock-parser": 20,
         "proximify/pm": 20
     },

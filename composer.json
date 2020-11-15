@@ -20,7 +20,11 @@
         "proximify/pm": "dev-master"
     },
     "require": {
-        "proximify/cli-actions": "dev-master"
+        "proximify/cli-actions": "dev-master",
+        "proximify/glot-renderer": "dev-develop"
+    },
+    "config": {
+        "secure-http": false
     },
     "repositories": [
         {
@@ -29,6 +33,10 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "composer",
+            "url": "http://localhost:8081/"
         }
     ]
 }
