@@ -18,6 +18,12 @@ class AppCLI extends CLIActions
         // postPackageInstall(PackageEvent $event)
         // $installedPackage = $event->getOperation()->getPackage();
 
+        if ($env['type'] == 'package') {
+            echo "\nOp:\n:";
+            // print_r($env['event']->getOperation());
+            // print_r($env['event']->getOperations());
+        }
+
         //$env = $options[self::ENV_OPTIONS];
         // $event = $env['event'] ?? false;
         $env['event'] = isset($env['event']) ? 'EVENT' : 'NO EVENT';

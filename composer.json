@@ -15,29 +15,12 @@
         }
     },
     "minimum-stability": "dev",
-    "require": {
-        "proximify/cli-actions": "dev-master",
-        "proximify/foreign-packages": "dev-master",
+    "require-dev": {
+        "t4web/composer-lock-parser": "dev-master",
         "proximify/pm": "dev-master"
     },
-    "scripts": {
-        "post-root-package-install": "Proximify\\AppCLI::auto",
-        "post-create-project-cmd": "Proximify\\AppCLI::auto",
-        "pre-install-cmd": "Proximify\\AppCLI::auto",
-        "post-install-cmd": "Proximify\\AppCLI::auto",
-        "pre-status-cmd": "Proximify\\AppCLI::auto",
-        "post-status-cmd": "Proximify\\AppCLI::auto",
-        "pre-update-cmd": "Proximify\\AppCLI::auto",
-        "post-update-cmd": "Proximify\\AppCLI::auto",
-        "pre-package-install": "Proximify\\AppCLI::auto",
-        "post-package-install": "Proximify\\AppCLI::auto",
-        "pre-package-update": "Proximify\\AppCLI::auto",
-        "post-package-update": "Proximify\\AppCLI::auto",
-        "pre-package-uninstall": "Proximify\\AppCLI::auto",
-        "post-package-uninstall": "Proximify\\AppCLI::auto"
-    },
-    "require-dev": {
-        "t4web/composer-lock-parser": "dev-master"
+    "require": {
+        "proximify/cli-actions": "dev-master"
     },
     "repositories": [
         {
