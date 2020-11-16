@@ -17,11 +17,10 @@
     "minimum-stability": "dev",
     "require-dev": {
         "t4web/composer-lock-parser": "dev-master",
-        "proximify/pm": "dev-master"
+        "proximify/packman": "dev-master"
     },
     "require": {
-        "proximify/cli-actions": "dev-master",
-        "proximify/glot-renderer": "dev-develop"
+        "proximify/cli-actions": "dev-master"
     },
     "config": {
         "secure-http": false
@@ -29,14 +28,10 @@
     "repositories": [
         {
             "type": "path",
-            "url": "/Users/dmac/Proximify/pm",
+            "url": "/Users/dmac/Proximify/packman",
             "options": {
                 "symlink": true
             }
-        },
-        {
-            "type": "composer",
-            "url": "http://localhost:8081/"
         }
     ]
 }

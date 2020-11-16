@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48c2adc7e135229836a88094dc734f9e",
+    "content-hash": "57528cf45060ca4feea7ede6f9b23eaf",
     "packages": [
         {
             "name": "proximify/cli-actions",
@@ -47,41 +47,6 @@
                 "source": "https://github.com/Proximify/cli-actions/tree/master"
             },
             "time": "2020-11-14T22:11:40+00:00"
-        },
-        {
-            "name": "proximify/glot-renderer",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:Proximify/glot-renderer.git",
-                "reference": "0b25bdcdeedfec7e3b1d41bca5ffb723be81d1fd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Proximify/glot-renderer/zipball/0b25bdcdeedfec7e3b1d41bca5ffb723be81d1fd",
-                "reference": "0b25bdcdeedfec7e3b1d41bca5ffb723be81d1fd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Proximify\\Glot\\": "src/"
-                }
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Proximify",
-                    "email": "support@proximify.ca"
-                }
-            ],
-            "description": "Renderer module for the GLOT framework.",
-            "time": "2020-11-13T21:50:16+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -238,12 +203,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "f284e032c3cefefb9943792132251b79a6127ca6"
+                "reference": "34b513f1bfb3677fc40aac34f8e4397eba4066ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/f284e032c3cefefb9943792132251b79a6127ca6",
-                "reference": "f284e032c3cefefb9943792132251b79a6127ca6",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/34b513f1bfb3677fc40aac34f8e4397eba4066ed",
+                "reference": "34b513f1bfb3677fc40aac34f8e4397eba4066ed",
                 "shasum": ""
             },
             "require": {
@@ -290,7 +255,7 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v5.2.0-RC1"
+                "source": "https://github.com/symfony/yaml/tree/5.x"
             },
             "funding": [
                 {
@@ -306,7 +271,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-24T12:03:25+00:00"
+            "time": "2020-11-15T22:55:04+00:00"
         }
     ],
     "packages-dev": [
@@ -864,12 +829,12 @@
             "time": "2020-05-27T16:41:55+00:00"
         },
         {
-            "name": "proximify/pm",
+            "name": "proximify/packman",
             "version": "dev-master",
             "dist": {
                 "type": "path",
-                "url": "/Users/dmac/Proximify/pm",
-                "reference": "7fd8828550635de34079f0a2279312d420b44f3e"
+                "url": "/Users/dmac/Proximify/packman",
+                "reference": "e6cdef98bc5720bdc9b6f5177b0cb1de3f3ad4b4"
             },
             "require": {
                 "composer-plugin-api": "^2.0",
@@ -895,7 +860,7 @@
                     "email": "support@proximify.ca"
                 }
             ],
-            "description": "Package manager.",
+            "description": "Composer plugin for managing private packages using a local packaging server.",
             "transport-options": {
                 "symlink": true,
                 "relative": false
@@ -2112,9 +2077,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "proximify/cli-actions": 20,
-        "proximify/glot-renderer": 20,
         "t4web/composer-lock-parser": 20,
-        "proximify/pm": 20
+        "proximify/packman": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
