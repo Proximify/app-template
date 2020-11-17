@@ -20,7 +20,8 @@
         "proximify/packman": "dev-master"
     },
     "require": {
-        "proximify/cli-actions": "dev-master"
+        "proximify/cli-actions": "dev-master",
+        "proximify/glot-renderer": "dev-master"
     },
     "config": {
         "secure-http": false
