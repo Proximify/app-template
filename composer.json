@@ -25,14 +25,5 @@
     },
     "config": {
         "secure-http": false
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "/Users/dmac/Proximify/packman",
-            "options": {
-                "symlink": true
-            }
-        }
-    ]
+    }
 }

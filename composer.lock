@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f180b71f987ce6b140c679bde65734a",
+    "content-hash": "7449c68b6b1e22b9a9b54870f400c490",
     "packages": [
         {
             "name": "proximify/cli-actions",
@@ -60,7 +60,7 @@
                 "type": "tar",
                 "url": "http://localhost:8081/dist/proximify/glot-renderer/proximify-glot-renderer-dev-master-0cad4e.tar",
                 "reference": "36ba462f051b67fef9cb80b2c88a960ccfed9b4b",
-                "shasum": "7bc85c9b80a7046f20fd644d8b3f232819658ddc"
+                "shasum": "0e5274e046566e069f3ae54e22ad753f849c353c"
             },
             "require": {
                 "php": ">=7.1.0"
@@ -866,16 +866,23 @@
         {
             "name": "proximify/packman",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Proximify/packman.git",
+                "reference": "aa6d2a9b1565c97fdff04b7181a671d27414a99c"
+            },
             "dist": {
-                "type": "path",
-                "url": "/Users/dmac/Proximify/packman",
-                "reference": "e6cdef98bc5720bdc9b6f5177b0cb1de3f3ad4b4"
+                "type": "zip",
+                "url": "https://api.github.com/repos/Proximify/packman/zipball/aa6d2a9b1565c97fdff04b7181a671d27414a99c",
+                "reference": "aa6d2a9b1565c97fdff04b7181a671d27414a99c",
+                "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^2.0",
                 "composer/satis": "dev-master",
                 "php": ">=7.2.0"
             },
+            "default-branch": true,
             "type": "composer-plugin",
             "extra": {
                 "class": "Proximify\\ComposerPlugin\\Loader",
@@ -886,6 +893,7 @@
                     "Proximify\\ComposerPlugin\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -896,10 +904,11 @@
                 }
             ],
             "description": "Composer plugin for managing private packages using a local packaging server.",
-            "transport-options": {
-                "symlink": true,
-                "relative": false
-            }
+            "support": {
+                "issues": "https://github.com/Proximify/packman/issues",
+                "source": "https://github.com/Proximify/packman/tree/1.0.0-beta"
+            },
+            "time": "2020-11-18T05:03:27+00:00"
         },
         {
             "name": "psr/container",
