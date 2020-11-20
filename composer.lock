@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "20bea3dbea74aa01441c36b69d533cd1",
+    "content-hash": "804b43ccb46bc6c48140e0aca4274c92",
     "packages": [
         {
             "name": "proximify/cli-actions",
@@ -60,7 +60,7 @@
                 "type": "tar",
                 "url": "http://localhost:8081/dist/proximify/glot-builder/proximify-glot-builder-dev-master-a99ee6.tar",
                 "reference": "768729e363d32925c5d6b7add11e01e7d0ba1b05",
-                "shasum": "5b332131031a1b6ac7f94907545b318c37331314"
+                "shasum": "7d7b4efda90dfa5c21ae98c52f201911a15cbe08"
             },
             "require": {
                 "proximify/cli-actions": "@dev",
@@ -117,7 +117,7 @@
                 "type": "tar",
                 "url": "http://localhost:8081/dist/proximify/glot-csscompiler/proximify-glot-csscompiler-dev-master-526366.tar",
                 "reference": "0846ff0bc48ddda6858d367ee7d94b7c6531249a",
-                "shasum": "0ca4d01bbaff7d780d00c6832b50faa264b37f63"
+                "shasum": "fda51e71ea867ec2412693b404a6b7943ae2fd5c"
             },
             "type": "library",
             "autoload": {
@@ -154,7 +154,7 @@
                 "type": "tar",
                 "url": "http://localhost:8081/dist/proximify/glot-imgoptimizer/proximify-glot-imgoptimizer-dev-master-ab5f02.tar",
                 "reference": "e11da9d2d8b513ef62224ce14678e36cbe040013",
-                "shasum": "6b90301bbb4914404c9b45c518ca8067e58613e5"
+                "shasum": "f43047145dd173d5e541bbd585ec22d45e64a504"
             },
             "type": "library",
             "autoload": {
@@ -191,7 +191,7 @@
                 "type": "tar",
                 "url": "http://localhost:8081/dist/proximify/glot-jscompiler/proximify-glot-jscompiler-dev-master-bd5e06.tar",
                 "reference": "f528392b316068b005ae88ed81389803531bfb92",
-                "shasum": "5bbdcfc4d560687079bef754b891fef88c0f122d"
+                "shasum": "830ef72f99c6bc410ff4f1acd55a4a98ffe08bde"
             },
             "type": "library",
             "autoload": {
@@ -217,6 +217,99 @@
             "time": "2020-11-10T21:24:02+00:00"
         },
         {
+            "name": "proximify/glot-provider",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com//proximify/glot-provider.git",
+                "reference": "5ccacd9b3bc009834270e73c79d6ab9ffd343f17"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "http://localhost:8081/dist/proximify/glot-provider/proximify-glot-provider-dev-master-71990c.tar",
+                "reference": "5ccacd9b3bc009834270e73c79d6ab9ffd343f17",
+                "shasum": "36b39691c946e7c9ace7cddd22a363d25411549a"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Proximify\\Glot\\Provider\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Proximify",
+                    "email": "support@proximify.ca"
+                }
+            ],
+            "description": "Provider module for the GLOT framework.",
+            "time": "2020-11-12T17:01:40+00:00"
+        },
+        {
+            "name": "proximify/glot-publisher",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com//proximify/glot-publisher.git",
+                "reference": "ebd681697e6e86a9fe43610dbdcbb17805f42d0b"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "http://localhost:8081/dist/proximify/glot-publisher/proximify-glot-publisher-dev-master-f7af68.tar",
+                "reference": "ebd681697e6e86a9fe43610dbdcbb17805f42d0b",
+                "shasum": "d729751a0be6696cd791a1038be77cf2d09b77ba"
+            },
+            "require": {
+                "proximify/cli-actions": "@dev",
+                "proximify/glot-builder": "@dev",
+                "proximify/glot-csscompiler": "@dev",
+                "proximify/glot-imgoptimizer": "@dev",
+                "proximify/glot-jscompiler": "@dev",
+                "proximify/glot-provider": "@dev",
+                "proximify/glot-renderer": "@dev",
+                "proximify/glot-task": "@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Proximify\\Glot\\Publisher\\": "src/"
+                }
+            },
+            "scripts": {
+                "build": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "Proximify\\Glot\\Publisher\\PublisherCLI::build"
+                ],
+                "publish": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "Proximify\\Glot\\Publisher\\PublisherCLI::publish"
+                ],
+                "create": [
+                    "Proximify\\Glot\\Publisher\\PublisherCLI::create"
+                ],
+                "delete": [
+                    "Proximify\\Glot\\Publisher\\PublisherCLI::delete"
+                ],
+                "test": [
+                    "Proximify\\Glot\\Publisher\\PublisherCLI::test"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Proximify",
+                    "email": "support@proximify.ca"
+                }
+            ],
+            "description": "Publisher module for the GLOT framework.",
+            "time": "2020-11-12T20:56:48+00:00"
+        },
+        {
             "name": "proximify/glot-renderer",
             "version": "dev-master",
             "source": {
@@ -228,7 +321,7 @@
                 "type": "tar",
                 "url": "http://localhost:8081/dist/proximify/glot-renderer/proximify-glot-renderer-dev-master-0cad4e.tar",
                 "reference": "36ba462f051b67fef9cb80b2c88a960ccfed9b4b",
-                "shasum": "2b8be89f82dcc72fc9d7ff5f3f20e07116096f46"
+                "shasum": "9b2e5a2710584f88863b6cfb78af8feb8037dde2"
             },
             "require": {
                 "php": ">=7.1.0"
@@ -263,7 +356,7 @@
                 "type": "tar",
                 "url": "http://localhost:8081/dist/proximify/glot-task/proximify-glot-task-dev-master-b1bcfc.tar",
                 "reference": "4fd5fe8ae253bd8720a8ebe6bd27da2a7310431d",
-                "shasum": "41112e6f7230a57be235b7d82b61d6119f360bf5"
+                "shasum": "d36b0f427e222553cc57c21f8c1ef7e5cd65718f"
             },
             "require": {
                 "proximify/glot-csscompiler": "@dev",
@@ -448,12 +541,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "34b513f1bfb3677fc40aac34f8e4397eba4066ed"
+                "reference": "0ad59b6a48bda2be6bea6e279208917b195fe616"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/34b513f1bfb3677fc40aac34f8e4397eba4066ed",
-                "reference": "34b513f1bfb3677fc40aac34f8e4397eba4066ed",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/0ad59b6a48bda2be6bea6e279208917b195fe616",
+                "reference": "0ad59b6a48bda2be6bea6e279208917b195fe616",
                 "shasum": ""
             },
             "require": {
@@ -516,7 +609,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-15T22:55:04+00:00"
+            "time": "2020-11-20T08:48:10+00:00"
         }
     ],
     "packages-dev": [],
@@ -525,7 +618,8 @@
     "stability-flags": {
         "proximify/cli-actions": 20,
         "proximify/glot-renderer": 20,
-        "proximify/glot-builder": 20
+        "proximify/glot-builder": 20,
+        "proximify/glot-publisher": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

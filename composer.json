@@ -18,9 +18,12 @@
     "require": {
         "proximify/cli-actions": "dev-master",
         "proximify/glot-renderer": "dev-master",
-        "proximify/glot-builder": "dev-master"
+        "proximify/glot-builder": "dev-master",
+        "proximify/glot-publisher": "dev-master"
     },
-    "config": {
-        "secure-http": false
+    "extra": {
+        "packman": {
+            "local": "pepe"
+        }
     }
 }
