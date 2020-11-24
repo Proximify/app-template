@@ -19,11 +19,15 @@
         "proximify/cli-actions": "dev-master",
         "proximify/glot-renderer": "dev-master",
         "proximify/glot-builder": "dev-master",
-        "proximify/glot-publisher": "dev-master"
+        "proximify/glot-publisher": "dev-master",
+        "proximify/glot-cli": "dev-master"
     },
     "extra": {
         "packman": {
-            "local": "pepe"
+            "symlinkDir": "~/Proximify",
+            "symlinks": [
+                "glot-cli"
+            ]
         }
     }
 }

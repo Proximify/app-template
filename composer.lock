@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "804b43ccb46bc6c48140e0aca4274c92",
+    "content-hash": "4763898021a916176c6f35aa97d4cc86",
     "packages": [
         {
             "name": "proximify/cli-actions",
@@ -104,6 +104,43 @@
             ],
             "description": "Builder module for the GLOT framework.",
             "time": "2020-11-11T23:10:39+00:00"
+        },
+        {
+            "name": "proximify/glot-cli",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "/Users/dmac/Proximify/glot-cli",
+                "reference": "3dc446d8d835e15b6103f6d9bae215ab8a6bd108"
+            },
+            "require": {
+                "proximify/glot-builder": "@dev",
+                "proximify/glot-publisher": "@dev",
+                "proximify/glot-renderer": "@dev"
+            },
+            "type": "library",
+            "scripts": {
+                "build": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "Proximify\\Dispatcher::build"
+                ],
+                "publish": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "Proximify\\Dispatcher::publish"
+                ],
+                "create": [
+                    "Composer\\Config::disableProcessTimeout",
+                    "Proximify\\Dispatcher::create"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Command-line interface for the GLOT framework.",
+            "transport-options": {
+                "symlink": true,
+                "relative": false
+            }
         },
         {
             "name": "proximify/glot-csscompiler",
@@ -619,7 +656,8 @@
         "proximify/cli-actions": 20,
         "proximify/glot-renderer": 20,
         "proximify/glot-builder": 20,
-        "proximify/glot-publisher": 20
+        "proximify/glot-publisher": 20,
+        "proximify/glot-cli": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
